@@ -1,0 +1,20 @@
+input {
+  height: 30px;
+  width: 30px;
+  appearance: none;
+  background-color: black;
+  border-radius: 50%;
+  opacity: 0;
+}
+input:hover {
+  cursor: pointer;
+}
+.tri-state-switch {
+  display: flex;
+  justify-content: center;
+  border: 3px solid black;
+  border-radius: 50px;
+}
+#one {
+  opacity: 1;
+}

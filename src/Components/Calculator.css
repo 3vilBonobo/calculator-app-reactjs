@@ -1,0 +1,11 @@
+.calculator {
+  width: 500px;
+  height: 600px;
+  border: 2px red solid;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
