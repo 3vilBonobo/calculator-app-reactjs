@@ -1,9 +1,9 @@
-import React from 'react';
-import './Calculator.css';
 import ButtonPanel from './ButtonPanel';
 import Screen from './Screen';
 import ThemeSwitch from './ThemeSwitch';
 import Button from './Button';
+import { StyledHeader } from './Styled/Header.styled';
+import { StyledCalculator } from './Styled/Calculator.styled';
 
 const Calculator = () => {
   const btnValues = [
@@ -15,11 +15,11 @@ const Calculator = () => {
   ];
 
   return (
-    <div className="calculator">
-      <div className="header">
+    <StyledCalculator>
+      <StyledHeader>
         <h1>calc</h1>
         <ThemeSwitch />
-      </div>
+      </StyledHeader>
 
       <Screen />
       <ButtonPanel>
@@ -27,7 +27,7 @@ const Calculator = () => {
           <Button value={btn} key={idx} />
         ))}
       </ButtonPanel>
-    </div>
+    </StyledCalculator>
   );
 };
 

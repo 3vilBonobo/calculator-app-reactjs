@@ -1,8 +1,8 @@
 import React from 'react';
-import Button from './Button';
+import { StyledButtonPanel } from './Styled/ButtonPanel.styled';
 
 const ButtonPanel = ({ children }) => {
-  return <div className="btnPanel">{children}</div>;
+  return <StyledButtonPanel>{children}</StyledButtonPanel>;
 };
 
 export default ButtonPanel;

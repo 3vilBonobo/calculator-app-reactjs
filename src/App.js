@@ -1,11 +1,20 @@
-import './App.css';
+// import { ThemeProvider } from 'styled-components';
+import GlobalStyles from './Components/Styled/Global.styled';
+import { StyledApp } from './Components/Styled/App.styled';
 import Calculator from './Components/Calculator';
+import Attribution from './Components/Attribution';
 
 const App = () => {
   return (
-    <div className="App">
-      <Calculator />
-    </div>
+    // <ThemeProvider>
+    <>
+      <GlobalStyles />
+      <StyledApp>
+        <Calculator />
+        <Attribution />
+      </StyledApp>
+      {/* </ThemeProvider> */}
+    </>
   );
 };
 
