@@ -9,6 +9,7 @@ const GlobalStyles = createGlobalStyle`
 }
 
 body {
+ background-color: ${({ theme }) => theme.backgroundColors.mainBg};
   height: 100vh;
   display: flex;
   align-items: center;
